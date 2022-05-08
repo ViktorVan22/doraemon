@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+ul, ol{
+  list-style: none;
+}
+.wrapper {
+  background: rgb(212, 236, 249);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+/* 我来组成头部 */
+.head {
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  background: #35a1c9;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  margin-left: -100px;
+  top: 100px;
+}
+/* 我来组成脸部 */
+.face {
+  border: 2px solid black;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  position: absolute;
+  background: white;
+}
+/* 我来组成眼睛 */
+.eye {
+  border: 1px solid black;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: absolute;
+  background: white;
+  top: 15px;
+}
+.eye.left {
+  right: 50%;
+  margin-left: 24px;
+}
+.eye.right {
+  left: 50%;
+  margin-right: 24px;
+}
+/* 我来组成瞳孔 */
+.eye.left > .pupil {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 21px;
+  position: relative;
+  background: black;
+  border-radius: 48% 48% 48% 48%;
+  top: 13.5px;
+  left: 28px;
+}
+.eye.right > .pupil {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 21px;
+  position: relative;
+  background: black;
+  border-radius: 48% 48% 48% 48%;
+  top: 13.5px;
+  left: 5px;
+}
+/* 我来组成瞳仁 */
+.pupil::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 9px;
+  background: white;
+  border-radius: 48% 48% 48% 48%;
+  position: relative;
+  /* 近似居中放置 */
+  top: 6px;
+  left: 4px;
+}
+/* 我来组成鼻子 */
+.nose {
+  border: 1px solid black;
+  width: 34px;
+  height: 34px;
+  position: relative;
+  border-radius: 50%;
+  background: rgb(177, 23, 53);
+  top: -26px;
+}
+.nose > .lunar {
+  border: 1px solid #fff;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  top: 6px;
+  left: 8px;
+}
+/* 我来组成嘴巴 */
+.mouth {
+  width: 140px;
+  height: 70px;
+  background: #b11635;
+  position: absolute;
+  top: 103px;
+  border-radius: 140px 140px 0 0;
+  transform: rotate(180deg);
+  overflow: hidden;
+}
+/* 我来组成舌头 */
+.mouth > .tongue {
+  /* border: 1px solid black; */
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: absolute;
+  background: rgb(202, 37, 51);
+  top: 15px;
+  overflow: hidden;
+}
+.mouth > .tongue.left {
+  left: 50%;
+  top: -10px;
+  left: 65px;
+}
+.mouth > .tongue.right {
+  right: 50%;
+  top: -10px;
+  right: 65px;
+}
+/* 我来组成胡子 */
+.moustache {
+  background: black;
+  width: 2px;
+  height: 14.8px;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  bottom: 47.4%;
+}
+/* 我来组成脸颊 */
+.cheek {
+  border: 2px solid red;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+.leftCheek {
+  border: 3px solid green;
+  width: 30px;
+  height: 30px;
+  margin: 4px;
+}
+.b1 {
+  width: 60px;
+  height: 2px;
+  background-color: black;
+}
+.b2 {
+  width: 60px;
+  height: 2px;
+  background-color: black;
+}
+.b3 {
+  width: 60px;
+  height: 2px;
+  background-color: black;
+}
+.rightCheek > {
+  border: 3px solid blue;
+  width: 30px;
+  height: 30px;
+  margin: 4px;
+}
+.b1_ {
+  width: 60px;
+  height: 2px;
+  background-color: black;
+}
+.b2_ {
+  width: 60px;
+  height: 2px;
+  background-color: black;
+}
+.b3_ {
+  width: 60px;
+  height: 2px;
+  background-color: black;
+}
+/* 我来组成竹蜻蜓！ */
+.flight-vehicle {
+}
